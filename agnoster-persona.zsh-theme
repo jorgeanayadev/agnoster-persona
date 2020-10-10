@@ -279,6 +279,7 @@ prompt_aws() {
 # ==============================
 # >> P E R S O N A 
 # by jorgeanayadev (hey@jorgeanaya.dev)
+# https://github.com/jorgeanayadev/agnoster-persona
 # ==============================
 
 function persona() {
