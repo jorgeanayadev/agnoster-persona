@@ -77,6 +77,9 @@ Before starting :checkered_flag:
 2. Download and Install [powerline fonts](https://github.com/powerline/fonts).
 3. [Configure your terminal](https://gist.github.com/agnoster/3712874#compatibility) to use powerline fonts.
 4. Download [agnoster-persona.zsh-theme](https://github.com/jorgeanayadev/agnoster-persona/blob/master/agnoster-persona.zsh-theme) to your .oh-my-zsh/custom/theme folder
+```bash
+curl https://raw.githubusercontent.com/jorgeanayadev/agnoster-persona/master/agnoster-persona.zsh-theme -o agnoster-persona.zsh-theme
+```
 5. Change the theme and enable emoji plug-in 
 ```bash 
 # edit your .zshrc config file
