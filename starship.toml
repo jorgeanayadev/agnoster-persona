@@ -18,3 +18,8 @@ command = "echo 👽 | printenv STARSHIP_SESSION"
 when = 'TRUE'
 style="bg:#180a48 fg:#ffffff"
 format = '[ $output ]($style)'
+
+[character]
+success_symbol = '[](bold green)'
+error_symbol = '[](bold red)'
+format = '$symbol '
