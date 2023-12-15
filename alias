@@ -1,0 +1,12 @@
+;= Persona (Custom Session Message)
+persona=SET STARSHIP_SESSION=$1 && TITLE $1
+
+;= LSD (LSDeluxe) | https://github.com/lsd-rs/lsd
+dir=lsd --long --all --blocks name,date,size --tree --depth 1 --group-directories-first --date relative $1 $2 $3 $4 $5
+dirs=lsd --long --all --blocks name,date,size --tree --depth 1 --group-directories-first --date relative --sizesort --total-size
+dirt=lsd --long --all --blocks name,date,size --tree --depth 1 --group-directories-first --date "+%Y-%b-%d %a, %H:%M:%S" --timesort
+dirg=lsd --long --all --blocks name,date,size,git --tree --depth 1 --group-directories-first  --date relative --git --gitsort
+dirtree=lsd --long -all --blocks name,date,size,permission,user,group --tree --directory-only --total-size
+
+;= FFMPEG
+ffmpeg-concat=(for %i in (*.$1) do @echo file '%i') > video.list && ffmpeg -f concat -i video.list -c copy $2
