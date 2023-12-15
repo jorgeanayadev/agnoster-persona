@@ -1,0 +1,20 @@
+# We can use this for a custom static message: [ message/variable here ](bg:#180a48 fg:#ffffff)\
+
+format = """
+[░▒▓](#180a48)\
+${custom.session}\
+[▓▒░](#180a48)\
+$all\
+$line_break\
+$character\
+"""
+
+# General configurations
+add_newline = true
+command_timeout = 1000
+
+[custom.session]
+command = "echo 👽 | printenv STARSHIP_SESSION"
+when = 'TRUE'
+style="bg:#180a48 fg:#ffffff"
+format = '[ $output ]($style)'
